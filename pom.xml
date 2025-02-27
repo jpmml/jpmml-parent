@@ -37,6 +37,7 @@
 
 	<properties>
 		<java.version>11</java.version>
+		<maven.compiler.release>${java.version}</maven.compiler.release>
 		<project.build.outputTimestamp>2025-02-21T10:47:15Z</project.build.outputTimestamp>
 	</properties>
 
@@ -73,7 +74,6 @@
 					<configuration>
 						<showDeprecation>true</showDeprecation>
 						<showWarnings>true</showWarnings>
-						<release>${java.version}</release>
 					</configuration>
 				</plugin>
 				<plugin>
@@ -114,7 +114,6 @@
 					<artifactId>maven-javadoc-plugin</artifactId>
 					<version>3.11.2</version>
 					<configuration>
-						<release>${java.version}</release>
 						<show>public</show>
 					</configuration>
 				</plugin>
