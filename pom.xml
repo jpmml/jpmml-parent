@@ -39,7 +39,7 @@
 
 	<properties>
 		<java.version>11</java.version>
-		<junit.version>5.14.2</junit.version>
+		<junit.version>5.14.3</junit.version>
 		<maven.compiler.release>${java.version}</maven.compiler.release>
 		<project.build.outputTimestamp>2026-02-15T08:01:05Z</project.build.outputTimestamp>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
