@@ -210,6 +210,11 @@
 						<updatePomFile>true</updatePomFile>
 						<flattenMode>oss</flattenMode>
 						<flattenDependencyMode>inherited</flattenDependencyMode>
+						<pomElements>
+							<properties>keep</properties>
+							<dependencyManagement>keep</dependencyManagement>
+							<pluginManagement>keep</pluginManagement>
+						</pomElements>
 					</configuration>
 					<executions>
 						<execution>
