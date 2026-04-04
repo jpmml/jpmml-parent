@@ -212,8 +212,10 @@
 						<flattenDependencyMode>inherited</flattenDependencyMode>
 						<pomElements>
 							<properties>keep</properties>
+							<dependencies>keep</dependencies>
 							<dependencyManagement>keep</dependencyManagement>
-							<pluginManagement>keep</pluginManagement>
+							<build>keep</build>
+							<profiles>keep</profiles>
 						</pomElements>
 					</configuration>
 					<executions>
