@@ -4,7 +4,7 @@
 
 	<groupId>org.jpmml</groupId>
 	<artifactId>jpmml-parent</artifactId>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0.16</version>
 	<packaging>pom</packaging>
 
 	<name>JPMML-Parent</name>
@@ -25,15 +25,11 @@
 		</developer>
 	</developers>
 
-	<scm
-		child.scm.connection.inherit.append.path="false"
-		child.scm.developerConnection.inherit.append.path="false"
-		child.scm.url.inherit.append.path="false"
-	>
+	<scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
 		<connection>scm:git:git@github.com:${github.repo}.git</connection>
 		<developerConnection>scm:git:git@github.com:${github.repo}.git</developerConnection>
 		<url>https://github.com/${github.repo}</url>
-		<tag>HEAD</tag>
+		<tag>1.0.16</tag>
 	</scm>
 	<issueManagement>
 		<system>GitHub</system>
@@ -45,7 +41,7 @@
 		<java.version>11</java.version>
 		<junit.version>5.14.3</junit.version>
 		<maven.compiler.release>${java.version}</maven.compiler.release>
-		<project.build.outputTimestamp>2026-04-02T18:17:19Z</project.build.outputTimestamp>
+		<project.build.outputTimestamp>2026-04-04T13:03:53Z</project.build.outputTimestamp>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
