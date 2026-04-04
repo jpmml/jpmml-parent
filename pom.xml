@@ -211,7 +211,7 @@
 						<flattenMode>oss</flattenMode>
 						<flattenDependencyMode>inherited</flattenDependencyMode>
 						<pomElements>
-							<properties>resolve</properties>
+							<properties>interpolate</properties>
 							<dependencies>resolve</dependencies>
 							<dependencyManagement>keep</dependencyManagement>
 							<build>keep</build>
