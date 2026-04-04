@@ -15,7 +15,6 @@
 		<license>
 			<name>BSD 3-Clause License</name>
 			<url>https://opensource.org/licenses/BSD-3-Clause</url>
-			<distribution>repo</distribution>
 		</license>
 	</licenses>
 
@@ -202,6 +201,32 @@
 					<artifactId>animal-sniffer-maven-plugin</artifactId>
 					<version>1.27</version>
 				</plugin>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>flatten-maven-plugin</artifactId>
+					<version>1.7.3</version>
+					<configuration>
+						<updatePomFile>true</updatePomFile>
+						<flattenMode>oss</flattenMode>
+						<flattenDependencyMode>inherited</flattenDependencyMode>
+					</configuration>
+					<executions>
+						<execution>
+							<id>flatten</id>
+							<phase>process-resources</phase>
+							<goals>
+								<goal>flatten</goal>
+							</goals>
+						</execution>
+						<execution>
+							<id>flatten-clean</id>
+							<phase>clean</phase>
+							<goals>
+								<goal>clean</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
 				<!--
 				Usage:
 				$ mvn versions:display-dependency-updates
@@ -251,6 +276,11 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>flatten-maven-plugin</artifactId>
 			</plugin>
 
 			<plugin>
