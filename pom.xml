@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" child.project.url.inherit.append.path="false">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.jpmml</groupId>
@@ -9,7 +9,7 @@
 
 	<name>JPMML-Parent</name>
 	<description>A parent Apache Maven Project Object Model (POM) for all JPMML projects</description>
-	<url>https://github.com/${github.repo}</url>
+	<url>https://github.com/jpmml/jpmml-parent</url>
 
 	<licenses>
 		<license>
@@ -25,19 +25,18 @@
 		</developer>
 	</developers>
 
-	<scm child.scm.connection.inherit.append.path="false" child.scm.developerConnection.inherit.append.path="false" child.scm.url.inherit.append.path="false">
-		<connection>scm:git:git@github.com:${github.repo}.git</connection>
-		<developerConnection>scm:git:git@github.com:${github.repo}.git</developerConnection>
-		<url>https://github.com/${github.repo}</url>
+	<scm>
+		<connection>scm:git:git@github.com:jpmml/jpmml-parent.git</connection>
+		<developerConnection>scm:git:git@github.com:jpmml/jpmml-parent.git</developerConnection>
+		<url>https://github.com/jpmml/jpmml-parent</url>
 		<tag>HEAD</tag>
 	</scm>
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/${github.repo}/issues</url>
+		<url>https://github.com/jpmml/jpmml-parent/issues</url>
 	</issueManagement>
 
 	<properties>
-		<github.repo>jpmml/jpmml-parent</github.repo>
 		<java.version>11</java.version>
 		<junit.version>5.14.3</junit.version>
 		<maven.compiler.release>${java.version}</maven.compiler.release>
