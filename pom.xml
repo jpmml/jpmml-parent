@@ -37,7 +37,7 @@
 	</issueManagement>
 
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 		<junit.version>5.14.4</junit.version>
 		<maven.compiler.release>${java.version}</maven.compiler.release>
 		<project.build.outputTimestamp>2026-09-27T20:18:02Z</project.build.outputTimestamp>
