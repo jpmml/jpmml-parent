@@ -208,6 +208,7 @@
 					<artifactId>flatten-maven-plugin</artifactId>
 					<version>1.8.0</version>
 					<configuration>
+						<outputDirectory>${project.build.directory}</outputDirectory>
 						<updatePomFile>true</updatePomFile>
 						<flattenMode>oss</flattenMode>
 						<flattenDependencyMode>inherited</flattenDependencyMode>
